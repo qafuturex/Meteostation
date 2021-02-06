@@ -1,19 +1,5 @@
 /***************************************************************************
-  This is a library for the BME280 humidity, temperature & pressure sensor
 
-  Designed specifically to work with the Adafruit BME280 Breakout
-  ----> http://www.adafruit.com/products/2650
-
-  These sensors use I2C or SPI to communicate, 2 or 4 pins are required
-  to interface. The device's I2C address is either 0x76 or 0x77.
-
-  Adafruit invests time and resources providing this open source code,
-  please support Adafruit andopen-source hardware by purchasing products
-  from Adafruit!
-
-  Written by Limor Fried & Kevin Townsend for Adafruit Industries.
-  BSD license, all text above must be included in any redistribution
-  See the LICENSE file for details.
  ***************************************************************************/
 
 #include <Wire.h>
@@ -22,8 +8,8 @@
 #include <Adafruit_BME280.h>
 
 #include <Adafruit_GFX.h>
-#include <Adafruit_SH1106.h>
-#include <Adafruit_SSD1306.h>
+#include <Adafruit_SH1106.h> //нужна для 1.3 дисплея, контроллер SH1106
+#include <Adafruit_SSD1306.h> //нужна для 0,96 дисплея, контроллер SSD1306
 #define OLED_RESET 5
 Adafruit_SH1106 display(OLED_RESET);
 
